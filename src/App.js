@@ -1,8 +1,7 @@
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import Home from 'pages/home';
-import Movies from 'pages/movies';
-import Series from 'pages/series';
+import Videos from 'pages/videos';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -13,8 +12,8 @@ const App = () => {
         <Routes>
           <Route element={<Header />}>
             <Route path="/" element={<Home />} />
-            <Route path="/movies" element={<Movies />} />
-            <Route path="/series" element={<Series />} />
+            <Route path="/movie" element={<Videos />} />
+            <Route path="/series" element={<Videos />} />
             <Route path="*" element={<div>404, Not Found!</div>} />
           </Route>
         </Routes>

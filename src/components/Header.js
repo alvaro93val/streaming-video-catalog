@@ -1,6 +1,6 @@
 import { AppBar, Box, Button, Divider, Toolbar, Typography } from '@mui/material';
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -20,9 +20,11 @@ const Header = () => {
           </AppBar>
           <AppBar position="static">
             <Toolbar style={{ backgroundColor: '#414141' }}>
-              <Typography variant="body1" component="div" sx={{ flexGrow: 4 }}>
-                Popular Titles
-              </Typography>
+              <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                <Typography variant="body1" component="div" sx={{ flexGrow: 4 }}>
+                  Popular Titles
+                </Typography>
+              </Link>
             </Toolbar>
           </AppBar>
         </Box>

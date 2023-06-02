@@ -1,16 +1,17 @@
+import { Button } from '@mui/material';
+import placeholder from 'assets/placeholder.png';
+import Cover from 'components/Cover';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div style={{ height: '60%' }}>
-      <h1>HOME</h1>
-      <p>
-        <Link to="/movies">MOVIES</Link>
-      </p>
-      <p>
-        <Link to="/series">SERIES</Link>
-      </p>
+    <div>
+      <Button href="/series">
+        <Cover image={placeholder} title="Popular Series" subtitle="SERIES" />
+      </Button>
+      <Button href="/movie">
+        <Cover image={placeholder} title="Popular Movies" subtitle="MOVIES" />
+      </Button>
     </div>
   );
 };
