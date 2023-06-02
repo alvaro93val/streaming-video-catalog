@@ -32,3 +32,14 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### QUESTIONS
+
+How did you decide on the technical and architectural options used as part of your solution?
+They are the technologies that I have used the most and I think they are the most efficient for the test.
+
+Are there any improvements I can make to your shipment?
+Yes, I haven't been able to finish it on time, I had a little delay in initializing the project, but I hope to finish it in a short time.
+
+What would you do differently if you were given more time?
+It would make the architecture cleaner and clearer in addition to implementing testing.
